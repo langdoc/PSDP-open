@@ -1,5 +1,5 @@
 # PSDP-open
-Repository for open data relating to Pite Saami
+Repository for open data and resources relating to Pite Saami
 and somehow stemming from **[the Pite Saami Documentation Project](http://saami.uni-freiburg.de/psdp/)** and its derivates.[^1]
 
 (see the [GNU v3.0 license](LICENSE))
