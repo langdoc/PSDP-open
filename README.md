@@ -4,4 +4,4 @@ and somehow stemming from **[the Pite Saami Documentation Project](http://saami.
 
 *contact:* `psdp (ät) gmx.de`
 
-(see the [license](LICENSE))
+(see the [GNU v3.0 license](LICENSE))
