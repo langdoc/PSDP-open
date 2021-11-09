@@ -1,0 +1,286 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+\usepackage{xltxtra,tabularx,hyperref,xcolor}
+\usepackage{geometry}
+%\setlength{\topmargin}{-10mm} 
+\setlength{\parindent}{6pt}
+
+\usepackage{multicol,multirow}
+
+%\setromanfont{Charis SIL}
+%\setromanfont{Arial Unicode MS}
+\setromanfont{Skolar PE}
+
+\usepackage[english]{babel}
+\usepackage{datetime2}%use \DTMnow for date, time, seconds (not \today, \currenttime)
+%\usepackage[iso]{datetime}%put this after {babel}, otherwise the date might be American-style
+
+%%add my new commands:
+\input{/Users/me/ballva/MyLaTeX/myTeXcommands.tex}
+
+\usepackage{scrlayer-scrpage}%used to be: {scrpage2}
+\pagestyle{scrheadings}
+\chead{
+\Tn{Errata in \It{A grammar of Pite Saami}}\hrule%fill
+%\Tn{Errata in {\fontspec{Linux Libertine}\Bf{A grammar of Pite Saami}}}
+}
+\cfoot{\pagemark\\\vspace{0pt}{\tiny version \DTMnow\\\vspace{-6pt}\href{http://jwilbur.de/errata/}{\fontspec{Courier}{\Tn{http://jwilbur.de/errata/}}}}}
+
+\newcommand{\QUES}{\textsuperscript{?}}%marks questionable/uncertain forms
+
+
+\begin{document}
+\thispagestyle{empty}
+
+
+{\centering
+Errata/Corrections/Improvements in\\\vspace{2pt}
+{\Large\fontspec{Linux Libertine}\Bf{A grammar of Pite Saami}} \\\footnotesize
+\vspace{2pt}Wilbur, Joshua (2014). Studies in Diversity Linguistics 5. Berlin: Language Science Press.\\
+\scriptsize \It{Version from \It{\DTMnow}\\}}
+%\vspace{10pt}
+% downloadable at: 
+%\href{http://langsci-press.org/catalog/book/17}{http://langsci-press.org/catalog/book/17}\\
+%}
+
+\hrulefill
+%\vspace{20pt}
+%\newcommand{\HANG}{\everypar{\hangindent6pt \hangafter1}}%also useful for table cells
+%\everypar{\hangindent6pt \hangafter1}%also useful for table cells
+
+\newcommand{\NewError}[1]{\vspace{1.5\baselineskip}\noindent\Bf{\BUL\ #1}}
+
+\noindent\Bf{\Red{NOTE:} Due to a typesetting error in the print version sold through early December 2014, mostly by \It{Books on Demand} (BoD), the contents of Chapter 7 starting at §\,7.9.2 in the print version appear one page later than in the digital version. All content from the beginning of Chapter 8 through to the end of the book appears two pages later than in the digital version! }
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{\PS\ texts in \It{Lappische Volksdichtung} not mentioned} 
+
+Pages 8-10, §\,1.2.1: This section details previous studies on the \PS\ language, but neglects to mention the collection of \PS\ texts told by Maria Johanson and collected by the Finnish scholar Eliel Lagercrantz in 1921. 
+There are 28 shorter monologue texts and five traditional songs (\It{yoiks}) (including musical transcriptions). All texts are transcribed using the Finno-Ugric phonetic alphabet, and include German translations. A brief comparison of the (morpho-)phonology of \PS\ vs. the Tysfjord dialect of Lule Saami is also included (p. 9-12). 
+
+The complete bibliographic reference:
+
+\hangindent16pt \hangafter1 %\noindent
+Lagercrantz, Eliel (1957). “West- und südlappische Texte. Gesammelt und herausgegeben von Eliel Lagercrantz”. In: \It{Lappische Volksdichtung}. Vol. 1. Suomalais-ugrilaisen Seuran Toimituksia 112. Helsinki: Suomalais-ugrilainen Seura.
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Misspelled Halász titles} 
+
+Page 8, §\,1.2.1, and page 272, bibliography: The titles of two of the Halász books are misspelled. Halász 1885 should be \It{Lule- és Pite-lappmarki nyelvmutatványok és szótár}; Halász 1893 should be \It{Népköltési gyűjtemény: a Pite Lappmark Arjepluogi egyházkerületéből}.
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Consonant clusters in word-final syllable codas}
+
+Pages 59-60, §\,3.1.2.2, including Table\,3.12 and footnote 15: There are four (not three, as reported in the text) frequently occurring bipartite CCs in word-final syllable coda position. The CC \ipa{jn} was not included in the description, but occurs for instance as the \Sc{iness.pl} nominal case suffix and as a variant of the \Sc{com.sg} nominal case suffix. A revised version of Table\,3.12 follows:\vspace{.5\baselineskip}
+
+{\centering
+%\caption{Word-final consonant clusters}\label{wordFinalCCs}
+\begin{tabular}{cl}
+\MC{2}{c}{Word-final consonant clusters}\\
+\hline
+{type}	&{attested}\\\dline
+CCs	&\ipa{st, jt, jn, lt} (\It{rare:} \ipa{rt, rm, lm, jk})\\
+CCC	&\ipa{jst} \\\hline
+\end{tabular}\\
+}
+
+\clearpage
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Phonetics/spelling of \It{gunne} ‘where’}
+
+Page 66 ex. 142 should be \ipa{/kunːe/} \ipa{{[}kunːe]} \It{gunne} ‘where’ (this mistake does not affect this example’s validity in this section).
+
+Page 124 Table 6.10 \It{gånne} ‘where’ should be \It{gunne}.
+
+Page 124 ex. 17 \It{gånne} ‘where’ should be \It{gunne}.
+
+Page 243 ex. 49 \It{gånne} ‘where’ should be \It{gunne}.
+
+
+%\clearpage
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Distribution of dialect variance in \It{ua/uä}}
+
+Pages 69-70, including Table 3.17: 
+The diphthong \ipa{/u͡a/} only exhibits the allophony described in this section in southern dialects (specifically, \ipa{/e,i/} in V2 position trigger the allophone \ipa{{[}u͡ɛ]}). 
+For northern dialects, \ipa{/u͡a/} is pronounced \ipa{{[}u͡ɛ]} in all environments; with this in mind, northern dialects do not have the phoneme \ipa{/u͡a/} at all, but instead the phoneme \ipa{/u͡ɛ/}, which does not exhibit allophony. Below is a revised version of Table 3.17, which here presents \ipa{/a͡u/}-allomorphy in the southern dialects:\vspace{.5\baselineskip}
+
+{\centering
+\begin{tabular}{lllll}
+\MC{5}{c}{Examples of allophony for the diphthong \ipa{/u͡a/} in southern dialects}\\
+\hline
+{allophone}&{phonemic}&{phonetic}&{orthography}&{gloss} \\\dline
+\ipa{{[}ʊ͡a]}&
+\ipa{l{u͡a}kːta}	&\ipa{l{ʊ͡a}ktːa}	&\It{luakkta}	& ‘bay\BS\Sc{nom.sg}’\\%\hline
+&\ipa{v{u͡a}sta}	&\ipa{v{ʊ͡a}sta}	&\It{vuasta}	& ‘cheese\BS\Sc{nom.sg}’\\%\hline
+&\ipa{k{u͡a}lːto}	&\ipa{k{ʊ͡a}lːto}	&\It{gualldo}	& ‘snow.flurry\BS\Sc{nom.sg}’\\%\hline
+&\ipa{ʧ{u͡a}rːvo-t}	&\ipa{ʧ{ʊ͡a}rːvotʰ}		&\It{tjuarrvot}	& ‘call\_out-\Sc{inf}’\\\relax%\hline%%\relax best solution to allow [ at beginning of following line to work; cf. http://tex.stackexchange.com/questions/86385/what-is-the-difference-between-relax-and/86387#86387
+\ipa{{[}ʊ͡ɛ]}&%\\%\hline%
+\ipa{j{u͡a}tke-t}	&\ipa{j{ʊ͡ɛ}tʰketʰ}		&\It{juätkit}	& ‘extend-\Sc{inf}’\\%\hline
+&\ipa{p{u͡a}jːte}	&\ipa{p{ʊ͡ɛ}jːte}		&\It{buäjjde}	& ‘fat\BS\Sc{nom.sg}’\\%\hline
+%&		&{northern}&& \\\cline{3-4}%\hline
+\hline
+\end{tabular}\\}
+
+
+%\clearpage%break
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Chapter 5 Nominals I: Nouns (typos)}
+
+Page 83, Chapter 5, first paragraph, third sentence, typographical error: This sentence should begin “Each \Bf{noun} consists of…” and not “Each \Bf{nouns} consists of…”.
+
+
+Page 84, Section 5.2, first paragraph, final sentence, typographical error: This sentence should be “§5.3 treats this in more detail.” and not “§5.3 \Bf{on} treats this in more detail.”
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Incorrect \Sc{com.pl} form in \It{bärrgo} ‘meat’ paradigm}
+
+Page 96, Table 5.6: the \Sc{com.pl} form in the paradigm for the word \It{bärrgo} ‘meat’ is incorrectly listed as \It{biergo}. The correct form it \It{biergoj}.
+
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Three, not four noun classes}
+
+Page 99, first full paragraph, first sentence incorrectly indicates that there are four inflectional noun classes; in fact, there are three.
+
+
+\clearpage
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Personal pronouns}
+
+Page 114 Table 6.1: a number of dual personal pronouns are incorrect. A corrected version of this part of the table follows, with corrected forms in \Bf{bold}:\vspace{.5\baselineskip}
+
+{\centering
+\begin{tabular}{ r  l  l  l  l }
+\MC{5}{c}{Personal pronouns}\\\hline
+		&\Sc{1\superS{st}}	&\Sc{2\superS{nd}}	&\Sc{3\superS{rd}}	&\\\dline
+%%DUAL
+\Sc{nom}	& \It{måj\textasciitilde måjå	} & \It{dåj\textasciitilde dåjå		} & \It{såj\textasciitilde såjå		}&\MR{7}{*}{\rotatebox{270}{\Sc{dual}}} \\%\cline{1-4}%\hline
+\Sc{gen}	& \BfIt{muno		} & \BfIt{duno			} & \BfIt{suno		}	&\\%\cline{1-4}%\hline
+\Sc{acc}	& \BfIt{munov		} & \BfIt{dunov			} & \BfIt{sunov		}	&\\%\cline{1-4}%\hline
+\Sc{ill}	& \It{munnuj		} & \It{dunnuj			} & \It{sunnuj		}	&\\%\cline{1-4}%\hline
+\Sc{iness}	& \BfIt{munon		} & \BfIt{dunon			} & \BfIt{sunon		}	&\\%\cline{1-4}%\hline
+\Sc{elat}	& \BfIt{munost		} & \BfIt{dunost			} & \BfIt{sunost		}	&\\%\cline{1-4}%\hline
+\Sc{com}	& \BfIt{munojn		} & \BfIt{dunojn			} & \BfIt{sunojn		}	&\\\hline%%\cline{1-4}%\hline
+%\Sc{ess}	&\MC{3}{c|}{\it munnon}								&\\\mybottomrule
+\end{tabular}\\}
+
+
+%\pagebreak
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Demonstratives vs.~demonstrative pronouns (§\,6.2, §\,7.8); footnote 1 on p.~151\footnote{Thanks to Olle Kejonen for pointing out these errors!}}
+
+The description of demonstratives in §\,7.8 erroneously states that demonstratives are “identical in form with the demonstrative pronouns listed in Table 6.3 on page 115 in the section on demonstrative pronouns (§\,6.2), and are therefore not listed separately here.” 
+In fact, singular demonstratives in illative and elative case differ from the corresponding demonstrative pronouns. % in that the demonstratives are all \It{dán}/\It{dan}/\It{dun} (for proximal, distal and remote) in these three cases. 
+With this in mind, demonstratives differ from demonstrative pronouns not only in their syntactic function, but in their morphology as well. 
+Thus, §\,7.8 should include its own table of demonstratives, as in the Table below (with forms unique to demonstratives in \Bf{bold}), rather than referring to the table in the section on demonstrative pronouns.\vspace{.5\baselineskip}
+
+{\centering
+%\begin{tabular}{ r  l  l  l  }%\mytoprule
+%\MC{4}{c}{Demonstratives}\\\hline
+%%		&\MC{6}{c}{\It{number}}	\\
+%		&\MC{3}{c}{\SG}	\\
+%		&\PROXs	&\DISTs	&\RMTs	\\\dline
+%\ILLs		& \BfIt{dán	} & \BfIt{dan	} & \BfIt{dun	} 	 \\
+%\ELATs	& \BfIt{dán	} & \BfIt{dan	} & \BfIt{dun	}  \\
+\begin{tabular}{ r  l  l  l  l l  l }%\mytoprule
+\MC{7}{c}{Demonstratives}\\\hline
+%		&\MC{6}{c}{\It{number}}	\\
+		&\MC{3}{c}{\Sc{sg}}	&\MC{3}{c}{\Sc{pl}}	\\
+		&\Sc{prox}	&\Sc{dist}	&\Sc{rmt}	&\Sc{prox}	&\Sc{dist}	&\Sc{rmt}	\\\dline
+\Sc{nom}	& \It{dát		} & \It{dat		} & \It{dut		} & \It{dá(h)	} & \It{da(h)	} & \It{du(h)	} \\
+\Sc{gen}	& \It{dán		} & \It{dan		} & \It{dun		} & \It{dáj		} & \It{daj		} & \It{duj	} \\
+\Sc{acc}	& \It{dáv		} & \It{dav		} & \It{duv		} & \It{dájt		} & \It{dajt		} & \It{dujt	} \\
+\Sc{ill}		& \BfIt{dán	} & \BfIt{dan	} & \BfIt{dun	} & \It{dájda	} & \It{dajda	} &n/a	 \\
+\Sc{iness}	& \It{dán		} & \It{dan		} & \It{dun		} & \It{dájdne	} & \It{dajdne	} & \QUES\It{duj	} \\
+\Sc{elat}	& \BfIt{dát		} & \BfIt{dat	} & \BfIt{dut	} & \It{dájste	} & \It{dajste	} & \QUES\It{duj	} \\
+\Sc{com}	& \It{dájna		} & \It{dajna	} & \It{dujn		} & \It{dáj		} & \It{daj		} & \It{duj	} \\\hline%\mybottomrule
+%%\ABESSs	&
+%%\ESSs		&
+\end{tabular}\\\vspace{.5\baselineskip}}
+
+This being the case, footnote 1 on page 151 (Ch. 8) concerning the NP \It{dan tjävvlaj} ‘the bobber’ (\Sc{ill.sg}) in example (6) is no longer meaningful and should be ignored. 
+
+On a related note, the demonstrative pronouns for illative and elative singular in Table 6.3 on p.~115 should not be marked by as tentative, but should be \It{dusa} (\Sc{ill.sg}) and \It{dusste} (\Sc{elat.sg}). Note also that the spellings of the \Sc{prox.iness.pl} and \Sc{dist.iness.pl} forms have been corrected to \It{dájdne} and \It{dajdne} here. 
+
+
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Chapter 7 Adjectivals (transcription and glossing error)}
+
+Page 142, example 39: The two words \It{biergo bijta} are transcribed and glossed incorrectly, although this does not affect the relevance of this particular example in this context; in fact, these are not two syntacticly (and orthographically) separate words, but together form a compound. The correct transcription is thus \It{bärrgobihtá} and the correct gloss is ‘meat.piece\Sc{nom.pl}’ (the compound components are \It{bärrgo}, which corresponds to the \Sc{nom.sg} form, and \It{bihtá}). 
+
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Chapter 8 Verbs (typos)}
+
+A typographical error involving the string “isinflection!verbal” (intended for indexing) appended directly onto a preceding word occurs three times: \\
+\BULLET\ Page 151, §\,8.1.3.1, the first sentence: “Verbs \Bf{inflected} for imperative mood indicate that…” and not “Verbs \Bf{inflectedisinflection!verbal} for imperative mood indicate that…”\\
+\BULLET\ Page 153, §\,8.1.3.2, the final sentence: “The person/number \Bf{suffixes} for potential mood are…” and not “The person/number \Bf{suffixesisinflection!verbal} for potential mood are…”\\
+\BULLET\ Page 157, §\,8.2.3, the second sentence: “The \Bf{inflecteional} behavior of the negation verb is presented…” and not “The \Bf{inflecteionalisinflection!verbal} behavior of the negation verb is presented…”\\
+
+Page 156, §\,8.2.2.2, third sentence: The \PS\ progressive verb form is spelled incorrectly. It should be \BfIt{ruhtastemin}, and not \BfIt{rhtastemin}.
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Chapter 9 Other word classes (typo)}
+
+Page 183, final sentence of the introductory paragraph for §\,9.1 Adverbs: Minor typo (superfluous ‘with’); this sentence should read: Here, §\,9.1.1 deals with the former, while §\,9.1.2 presents the latter.
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Chapter 9 Other word classes (glossing error)}
+
+Page 189, example 13: The word \It{sparkijin} is incorrectly glossed as ‘kick.sled-\Sc{com.sg}’; the correct gloss is ‘ride.kick.sled-\Sc{3pl.pst}’. 
+
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Type of phrase connected by the conjunction \It{eller}}
+
+§\,9.3, final sentence, bottom of page 191: this sentence erroneously states that the loan conjunction \It{eller} connects \Bf{NPs} in the example in (21), when in fact it connects \Bf{verb complexes/finite verbs}. 
+
+\pagebreak
+
+%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+\NewError{Revisions to the analysis of the agent nominalizer suffix \It{-däddje} (§\,10.1.4)\footnote{Thanks to Olle Kejonen for pointing out these inconsistencies!}}
+
+The agent nominalizer suffix discussed in §\,10.1.4 should be \It{-äddje}, and not \It{-däddje}. The \It{d} belongs to the stem of many of the relevant derivational bases, but is not the only possibility. This is evidenced for instance by \It{gulldaläddje} ‘listener‘, which is based on the stem \It{gulldal-} (cf.~\It{gulldalit} ‘listen’), and by \It{báhtaräddje} ‘refugee’, based on the stem \It{báhtar-} (cf.~\It{báhtarit} ‘flee’). 
+
+With this in mind, the morpheme boundaries in all the examples in §\,10.1.4 should be immediately before \It{äddje}, such as (27) \It{vuojnad-äddje} ‘clairvoyant’ and (28) \It{åhpod-äddje} ‘teacher’. 
+In addition, the instances of \It{-däddje} in the introduction to §\,10.1, Table 10.1 and Table 10.2 should be changed to \It{-äddje}. 
+
+As a result of this corrected mophonological analysis, the proposition that \It{-äddje} can be affixed to a nominal or other non-verbal base is unlikely (cf.~top of p.~201). 
+Instead, even derived nouns like those in (28) through (30) feature a verbal base, cf.~\It{åhpådit} ‘teach’, \It{málestit} ‘cook’ and \It{gielestit} ‘lie’, respectively. 
+In Table 10.1 and Table 10.2, indications that the derivational base of \It{-äddje} can be a noun are therefore incorrect. 
+
+Finally, note that the current \PS\ orthography standard dictates that /t/ be spelled with <t> word internally when following a sibilant, and with <d> intervocallically, thus (29) \It{máls\Bf{t}äddje} ‘chef’ and (30) \It{gieles\Bf{t}äddje} ‘liar’ (and not \It{máls\Bf{d}äddje}, \It{gieles\Bf{d}äddje}, respectively), but \It{vuojna\Bf{d}äddje} ‘clairvoyant’ for instance remains correct. 
+
+
+
+%\vfill
+%
+%\hfill{\scriptsize Version from 
+%\It{\today\ \currenttime}}
+
+%%%%%%%%%%%%%%% E R R O R %%%%%%%%%%
+%\NewError{Capitalization errors in bibliographic references}
+%
+%Pages 271–274, Bibliography: due to an inconsistency in the computer program creating the bibliography, a number of words in some references are spelled using lower-case letters when these should be uppercase.
+
+
+
+
+
+\end{document}
