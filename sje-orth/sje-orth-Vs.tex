@@ -1,0 +1,93 @@
+\documentclass[a4paper,12pt,landscape]{scrartcl}%option ‘draft’ indicates over-full lines, but also represses images from being typeset
+\input{/Users/me/ballva/MyLaTeX/myTeXpreamble.tex}
+
+\usepackage[ngerman]{babel}
+
+%https://tex.stackexchange.com/questions/60601/evenly-distributing-column-widths
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\setlength{\parindent}{0mm}
+\addtolength{\topmargin}{-8mm}
+\addtolength{\textheight}{35mm}
+
+\setromanfont{Arial}
+%\setromanfont{Gill Sans}
+%\setromanfont{Charis SIL}
+%\setromanfont{Arial Unicode MS}
+
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%B E G I N %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%B E G I N %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\pagestyle{empty}
+\renewfontfamily\scshape[Letters=SmallCaps, Numbers=Uppercase]{Hoefler Text}%creates small caps
+
+\centering
+\Large
+
+The orthographic representation of \PS\ vowels\\
+{\normalsize in bisyllabic and trisyllabic words}
+\bigskip
+\large
+
+%set spacing (diacritic above better) %https://tex.stackexchange.com/questions/102996/how-to-set-the-space-between-rows-in-a-table
+\def\arraystretch{1.3}%\tabcolsep=10pt
+
+%\begin{tabular}{|c|c|c|c|x{15mm}|l|}
+\begin{tabularx}{\textwidth}{ |c| Y |Y|Y|Y|l|c|}
+\cline{2-5}
+\MC{1}{c|}{}	&\MC{4}{c|}{\It{grapheme}}	&\MC{2}{c}{}	\\
+%\cline{2-5}
+%			&\MC{4}{c|}{\It{vowel slot}}				&\MC{2}{c}{}	\\
+\MC{1}{c|}{}	&\MC{2}{c|}{\Bf{V1}}		&\Bf{V2}	&\Bf{V3}	&\MC{2}{c}{}\\[-2mm]\cline{1-1}\cline{6-7}
+\It{phoneme}	&\BfIt{default}&\BfIt{+VH*}	&		&		&\It{notes}&\It{length}\\\dline
+%\MC{1}{c}{}&\MC{6}{l}{Monophthongs}\\\cline{2-7}%\hline
+aː			&á		&ä			&á		&-		&		&L	\\\hline
+a			&a		&i			&a		&a		&		&S	\\\dline
+
+%%presentation option 1: ɛ and e separate phonemes, perhaps easier to understand
+%ɛ			&ä		&e			&-		&-		& restricted to gIII	\\\hline
+%e			&ie		&e			&e		&e		& restricted to gII \& gI	\\\hline
+
+%%presentation option 2: [ɛ] allophone of e, better linguistic description
+e			&ie		&e			&e		&-		&		&L 	\\%\hline
+			&ä		&			&		&		& for Q3 (and no VH)	&\\\hline
+i			&i		&i			&i		&i		&		&S 	\\%\dline
+			&		&			&		&(ä)		& (for open syllables?)	&	\\\dline
+
+o			&uo		&u (ú)		&o		&-		&  		&L 	\\%\dline
+			&ua		&			&		&		& for Q3 (and no VH)	&\\%\hline
+			&uä		&			&		&		& variant of <ua> when V2 = <e>	&\\\hline
+u			&u		&u			&u		&u		&		& S	\\\dline
+
+ɔː			&å (ǻ)	&u (ú)		&-		&-		&	 	&L\\\hline %if marked for length <ǻ>\textasciitilde<åå>
+ɔ			&å		&u			&å		&-		&		& S	\\\hline
+
+%\MC{7}{l}{{\It{*\Bf{+VH} = when subject to vowel harmony} (triggered by /i/ or /u/ in V2)}}\\
+
+%\MC{6}{l}{Diphthong}\\\hline
+%	&/u͡a/			&ua		&u			&-		&-		& restricted to gIII	\\%\hline
+%	&			&uä		&			&		&		& allophone of /u͡a/ when V2 = /e/	\\\hline
+
+
+%\MC{7}{l}{\It{Variants}}\\\hline
+%/u͡e/			&uä		&u			&-		&-		&\MC{2}{l|}{dialectal variant of <ua>}	\\\hline
+%/ɨ/			&i		&i			&-		&-		&\MC{2}{l|}{idiolectal variant of <i> in V1}	\\\hline
+
+\end{tabularx}
+
+\smallskip
+{\It{*\Bf{+VH} = when subject to vowel harmony} (triggered by /i/ or /u/ in V2)\hfill}
+
+\vfill
+\tiny
+\It{\href{http://saami.uni-freiburg.de/psdp/}{PSDP} - version: \today}
+
+
+
+
+
+
+\end{document}
